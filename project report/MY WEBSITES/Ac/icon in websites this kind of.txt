@@ -1,0 +1,3 @@
+google search by-: font awesome cdn
+first link click here
+website open this link copy https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;
+    width: 900px;
+    height: 450px;
+}
+.w3-content{
+    margin-right: 45%;
+    padding: 10px;
+    padding-block:inherit;
+}
+/*header size */
+header{
+        background-color: silver;
+        margin-top: 0px;
+        margin-left: 2px;
+        
+    }
+    header img
+    {
+width: 50px;
+margin-top: 0px;
+float: left;
+    }
+
+    header h1{
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 2em;
+    }
+
+
+</style>
+</head>
+<body style="background-color: silver">
+    <header >
+        <nav>
+        <a href="First.html" ><img src="call.jpg" style="width:150px; height:100px;"></a>
+        <h1 style="-webkit-text-stroke-color:dimgrey; -webkit-text-fill-color: rgb(255, 8, 0);-webkit-text-stroke-width:2px ">Rocks college'<sup>s</sup>&NonBreakingSpace;
+        <h4 style="text-align: center; color: dimgray">(APPROVED BY AICTE & GOVT.OF HARYANA AND AFFILLIATED TO MDU ROHTAK)
+        </h4></h1>&nbsp;
+      </nav>
+    </header>
+
+<h2 class="w3-" style="color: blue">College Hostel's</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="hostel/a.jpg">
+  <img class="mySlides" src="hostel/b.jpg" >
+  <img class="mySlides" src="hostel/c.jpg" >
+  <img class="mySlides" src="hostel/d.jpg" >
+   <img class="mySlides" src="hostel/e.jpg">
+  <img class="mySlides" src="hostel/f.jpg" >
+   </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

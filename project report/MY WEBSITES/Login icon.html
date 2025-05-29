@@ -1,0 +1,130 @@
+<! DOCTYPE html>  
+<html lang="en" >  
+<head>  
+  <meta charset="UTF-8">  
+  <title>Student-Login </title>  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+</head>  
+<style>  
+body {  
+    font-family: 'Muli', sans-serif;  
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsnyMlm4i2S43NZ6h796vH3hHNiDnRVA2CA&usqp=CAU);
+
+
+  }
+  *header size */
+header{
+        background-color: rgb(255, 255, 255);
+        margin-top: 0px;
+        margin-left: 2px;
+        
+    }
+    header img
+    {
+width: 50px;
+margin-top: 0px;
+float: left;
+    }
+
+    header h1{
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 2em;
+    }
+    .login-block {
+    float:left;
+    margin:0 49px 25px 0;
+    text-align:center;
+    width:260px;
+    margin-top: 5%;
+    margin-left: 100px;
+    
+}
+
+.login-block form {
+    -moz-border-radius:15px 15px 15px 15px;
+    -moz-box-shadow:0 0 10px #333333;
+    border:3px solid white;
+    padding:20px;
+}
+
+.login-block .active-form {
+    border-color:#d09e6d;
+}    
+.h3s{
+    color:blue
+}
+
+
+
+</style>  
+<body>  
+  <header >
+    <nav>
+    <a href="First.html" ><img src="call.jpg" style="width:150px; height:100px;"></a>
+    <h1 style="-webkit-text-stroke-color:dimgrey; -webkit-text-fill-color: rgb(255, 8, 0);-webkit-text-stroke-width:2px ">Rocks college'<sup>s</sup>&NonBreakingSpace;
+    <h4 style="text-align: center; color: dimgray">(APPROVED BY AICTE & GOVT.OF HARYANA AND AFFILLIATED TO MDU ROHTAK)
+    </h4></h1>&nbsp;
+  </nav>
+</header><hr>
+<section style="background-color:rgb(255, 8, 0)">
+
+<div class="login-block">
+    <h3 class="h3s">Student Login</h3>
+    <form action="#" method="post" target="_blank">
+               <p><label for="sharepoint-user-name">User Name</label><input type="text" placeholder="Email" name="ftp-user-name" id="ftp-user-name" /></p>
+        <p><label for="sharepoint-password">Password</label><input type="password" name="ftp-password" id="ftp-password" /></p>
+        <p class="submit-wrap">
+            <button class="button">Forget-Password</button><br>
+            <button class="button"onclick="window.location.href='index.html'" type="Log in">Log in</button>
+        </p>
+    </form>
+</div>
+
+<div class="login-block">
+    <h3 class="h3s">Faculity Login</h3>
+    <form action="#" method="post" target="_blank">
+        <p><label for="ftp-user-name">User Name</label><input type="text" placeholder="Email" name="ftp-user-name" id="ftp-user-name" /></p>
+        <p><label for="ftp-password">Password</label><input type="password" name="ftp-password" id="ftp-password" /></p>
+        <p class="submit-wrap">
+            <button class="button">Forget-Password</button><br>
+            <button class="button" onclick="window.location.href='index.html'" type="Log in">Log in</button>
+           
+        </p>
+    </form>
+</div>
+
+<div class="login-block last"> 
+    <h3 class="h3s">Administration Login</h3>
+    <form action="#" method="post" target="_blank">
+        <p><label for="secret-user-name">User Name</label><input type="text" placeholder="Email" name="ftp-user-name" id="ftp-user-name" /></p>
+        <p><label for="secret-password">Password</label><input type="password" name="ftp-password" id="ftp-password" /></p>
+        <p class="submit-wrap">
+            <button class="button">Forget-Password</button><br>
+            <button class="button"onclick="window.location.href='index.html'" type="Log in">Log in</button>
+        </p>
+
+
+
+    </form>
+</div>
+</section>
+<script>
+$(function() {
+    var $forms = $("form");
+    $forms.focusin(function() {
+        $forms.removeClass("active-form");
+        $(this).addClass("active-form");
+    });
+});
+Demo
+
+
+
+
+</script>
+
+
+</body>  
+</html>  

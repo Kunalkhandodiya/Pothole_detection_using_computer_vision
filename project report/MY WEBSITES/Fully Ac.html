@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Fully AC Campus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+\*header size */
+header{
+        background-color: rgb(255, 255, 255);
+        margin-top: 0px;
+        margin-left: 2px;
+        
+    }
+    header img
+    {
+width: 50px;
+margin-top: 0px;
+float: left;
+    }
+
+    header h1{
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 2em;
+    }
+
+
+
+
+.mySlides {display:none;}
+</style>
+</head>
+
+<body Style="background-image:url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80)">
+  <header >
+    <nav>
+    <a href="First.html" ><img src="call.jpg" style="width:150px; height:100px;"></a>
+    <h1 style="-webkit-text-stroke-color:dimgrey; -webkit-text-fill-color: rgb(255, 8, 0);-webkit-text-stroke-width:2px ">Rocks college'<sup>s</sup>&NonBreakingSpace;
+    <h4 style="text-align: center; color: dimgray">(APPROVED BY AICTE & GOVT.OF HARYANA AND AFFILLIATED TO MDU ROHTAK)
+    </h4></h1>&nbsp;
+  </nav>
+</header>
+
+<h2 style="color: yellow"> Fully AC Campus</h2>
+
+<div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="Ac\AC1.jpg" style="width:100%">
+  <img class="mySlides" src="Ac\AC2.jpg" style="width:100%">
+   <img class="mySlides" src="Ac\AC3.jpg" style="width:100%">
+    <img class="mySlides" src="Ac\AC4.jpg" style="width:100%">
+	 <img class="mySlides" src="Ac\AC5.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
